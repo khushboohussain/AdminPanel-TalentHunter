@@ -6,7 +6,8 @@
         <div class="col-md-4">
           <!-- If you do not want a link in the header, instead of .header-title-link you can use a div with the class .header-section -->
           <a class="header-title-link">
-            <h1><i class="fa fa-plane " aria-hidden="true"></i>TalentHunter Dashboard<br><small>Welcome Admin!</small></h1>
+            <h1><i class="fa fa-plane " aria-hidden="true"></i>TalentHunter Dashboard<br><small>Welcome Admin!</small>
+            </h1>
           </a>
         </div>
         <!-- END Title -->
@@ -21,21 +22,21 @@
                 <div class="col-xs-12 col-md-4">
                   <a class="header-link">
                     <h1 class="animation-pullDown">
-                      <strong>10</strong><br><small>Employess</small>
+                      <strong> {{totalEmployees}} </strong><br><small>Employees</small>
                     </h1>
                   </a>
                 </div>
                 <div class="col-xs-12 col-md-4">
                   <a class="header-link">
                     <h1 class="animation-pullDown">
-                      <strong>45</strong><br><small>Complains</small>
+                      <strong> {{totalJobs}} </strong><br><small>Complains</small>
                     </h1>
                   </a>
                 </div>
                 <div class="col-xs-12 col-md-4">
                   <a class="header-link">
                     <h1 class="animation-pullDown">
-                      <strong>12</strong><br><small>Jobs</small>
+                      <strong> {{totalComplains}} </strong><br><small>Jobs</small>
                     </h1>
                   </a>
                 </div>
@@ -55,7 +56,8 @@
     <div class="row" style=" margin-bottom: 15px !important">
       <div class="col-xs-12 col-md-4"></div>
       <div class="col-xs-12 col-md-4" style="text-align: center !important;">
-        <button routerLink="/dashboard/blocked" type="button" class="btn btn-block btn-primary" (click)="packages()">ADD PACKAGES
+        <button routerLink="/dashboard/blocked" type="button" class="btn btn-block btn-primary" (click)="packages()">ADD
+          PACKAGES
         </button>
       </div>
       <div class="col-xs-12 col-md-4"></div>
@@ -65,24 +67,24 @@
     <div class="block" *ngIf="package">
       <!-- PT On the Grid Title -->
       <div class="block-title">
-          <h2>Choose Package</h2>
+        <h2>Choose Package</h2>
       </div>
       <!-- END PT On the Grid Title -->
 
       <!-- PT On the Grid Content -->
       <div class="row">
-          <div class="col-sm-4">
-              <table class="table table-borderless table-pricing">
-                  <thead>
-                      <tr>
-                          <th>Package 1</th>
-                      </tr>
-                  </thead>
-                  <tbody style="background: darkcyan;color:white">
-                      <tr>
-                          <td><strong>1</strong> active project</td>
-                      </tr>
-                      <!-- <tr>
+        <div class="col-sm-4">
+          <table class="table table-borderless table-pricing">
+            <thead>
+              <tr>
+                <th>Package 1</th>
+              </tr>
+            </thead>
+            <tbody style="background: darkcyan;color:white">
+              <tr>
+                <td><strong>1</strong> active project</td>
+              </tr>
+              <!-- <tr>
                           <td><strong>5GB</strong> File Storage</td>
                       </tr>
                       <tr>
@@ -96,26 +98,26 @@
                               <h1>$19<br><small>per month</small></h1>
                           </td>
                       </tr> -->
-                      <tr>
-                          <td>
-                              <a  class="btn btn-sm btn-primary">Add Package</a>
-                          </td>
-                      </tr>
-                  </tbody>
-              </table>
-          </div>
-          <div class="col-sm-4">
-              <table class="table table-borderless table-pricing table-featured">
-                  <thead>
-                      <tr>
-                          <th>Package 2</th>
-                      </tr>
-                  </thead>
-                  <tbody >
-                      <tr>
-                          <td><strong>10</strong> active projects</td>
-                      </tr>
-                      <!-- <tr>
+              <tr>
+                <td>
+                  <a class="btn btn-sm btn-primary">Add Package</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-sm-4">
+          <table class="table table-borderless table-pricing table-featured">
+            <thead>
+              <tr>
+                <th>Package 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>10</strong> active projects</td>
+              </tr>
+              <!-- <tr>
                           <td><strong>20GB</strong> File Storage</td>
                       </tr>
                       <tr>
@@ -129,35 +131,35 @@
                               <h1>$39<br><small>per month</small></h1>
                           </td>
                       </tr> -->
-                      <tr>
-                          <td>
-                              <a class="btn btn-danger">Add Package</a>
-                          </td>
-                      </tr>
-                  </tbody>
-              </table>
-          </div>
-          <div class="col-sm-4">
-              <table class="table table-borderless table-pricing">
-                  <thead>
-                      <tr>
-                          <th>Package 3</th>
-                      </tr>
-                  </thead>
-                  <tbody style="background: darkcyan;color:white">
-                      <tr>
-                          <td><strong>50</strong> active projects</td>
-                      </tr>
+              <tr>
+                <td>
+                  <a class="btn btn-danger">Add Package</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-sm-4">
+          <table class="table table-borderless table-pricing">
+            <thead>
+              <tr>
+                <th>Package 3</th>
+              </tr>
+            </thead>
+            <tbody style="background: darkcyan;color:white">
+              <tr>
+                <td><strong>50</strong> active projects</td>
+              </tr>
 
-                      <tr>
-                          <td>
-                              <a  class="btn btn-sm btn-primary">Add Package</a>
-                          </td>
-                      </tr>
-                  </tbody>
-              </table>
-          </div>
+              <tr>
+                <td>
+                  <a class="btn btn-sm btn-primary">Add Package</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
       </div>
       <!-- END PT On the Grid Content -->
-  </div>
+    </div>
