@@ -6,60 +6,68 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./joblist.component.css']
 })
 export class JoblistComponent implements OnInit {
-  p=1;
-  searchText='';
-    constructor() { }
+  p = 1;
+  searchText = '';
+  constructor() { }
 
-    ngOnInit() {
+  ngOnInit() {
+  }
+
+  activeJobs() {
+    alert('Active Jobs is clicked!');
+  }
+  finishJobs() {
+    alert('Active Jobs is clicked!');
+  }
+
+  employee = [
+    {
+      id: 'edcfvgbhnjm',
+      customerUserName: 'abdull',
+      totalAmount: 200,
+      currency: 'PKR',
+      status: 'Delivered'
+    },
+    {
+      id: 'edcfvgbhnjm',
+      customerUserName: 'abdull',
+      totalAmount: 200,
+      currency: 'PKR',
+      status: 'Delivered'
     }
-    employee=[
-      {
-        id:'edcfvgbhnjm',
-        customerUserName:'abdull',
-        totalAmount:200,
-        currency:'PKR',
-        status:'Delivered'
-      },
-      {
-        id:'edcfvgbhnjm',
-        customerUserName:'abdull',
-        totalAmount:200,
-        currency:'PKR',
-        status:'Delivered'
-      }
-      ,{
-        id:'edcfvgbhnjm',
-        customerUserName:'abdull',
-        totalAmount:200,
-        currency:'PKR',
-        status:'Delivered'
-      }
-      ,{
-        id:'edcfvgbhnjm',
-        customerUserName:'abdull',
-        totalAmount:200,
-        currency:'PKR',
-        status:'Delivered'
-      }
-      ,{
-        id:'edcfvgbhnjm',
-        customerUserName:'abdull',
-        totalAmount:200,
-        currency:'PKR',
-        status:'Delivered'
-      }
-      ,{
-        id:'edcfvgbhnjm',
-        customerUserName:'abdull',
-        totalAmount:200,
-        currency:'PKR',
-        status:'Delivered'
-      }
-    ]
-    filterCondition(product) {
+    , {
+      id: 'edcfvgbhnjm',
+      customerUserName: 'abdull',
+      totalAmount: 200,
+      currency: 'PKR',
+      status: 'Delivered'
+    }
+    , {
+      id: 'edcfvgbhnjm',
+      customerUserName: 'abdull',
+      totalAmount: 200,
+      currency: 'PKR',
+      status: 'Delivered'
+    }
+    , {
+      id: 'edcfvgbhnjm',
+      customerUserName: 'abdull',
+      totalAmount: 200,
+      currency: 'PKR',
+      status: 'Delivered'
+    }
+    , {
+      id: 'edcfvgbhnjm',
+      customerUserName: 'abdull',
+      totalAmount: 200,
+      currency: 'PKR',
+      status: 'Delivered'
+    }
+  ]
 
-
-      return product.id.toLowerCase().indexOf(this.searchText.toLowerCase()) != -1;
-      }
+  // Search Data
+  filterCondition(product) {
+    return product.id.toLowerCase().indexOf(this.searchText.toLowerCase()) != -1;
+  }
 
 }
