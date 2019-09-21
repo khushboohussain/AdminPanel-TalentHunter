@@ -32,7 +32,7 @@ export class ApiService {
 
   /* Employees/condidates List */
   getAllEmployees() {
-    return this.afs.collection('candidate').snapshotChanges();
+    return this.afs.collection('applyJob').snapshotChanges();
   }
   /* Employer List */
   getAllCompany() {
@@ -40,7 +40,7 @@ export class ApiService {
   }
   /* Job List */
   getAllJobs() {
-    return this.afs.collection('job').snapshotChanges();
+    return this.afs.collection('jobPost').snapshotChanges();
   }
   /* Business List */
   getAllbusiness() {

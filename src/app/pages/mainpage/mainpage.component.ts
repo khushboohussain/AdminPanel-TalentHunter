@@ -24,6 +24,8 @@ export class MainpageComponent implements OnInit {
       return { did, ...data };
     })))
       .subscribe((res: any) => {
+        console.log('Employees Records ', res);
+        
         this.totalEmployees = res.length;
       }, err => {
         console.log('Employees records error ', err.message);
@@ -35,6 +37,8 @@ export class MainpageComponent implements OnInit {
       return { did, ...data };
     })))
       .subscribe((res: any) => {
+        console.log('res of Companies ', res);
+        
         this.totalComplains = res.length;
       }, err => {
         console.log('Complains records error ', err.message);
@@ -46,6 +50,8 @@ export class MainpageComponent implements OnInit {
       return { did, ...data };
     })))
       .subscribe((res: any) => {
+        console.log('Jobs Records ', res);
+
         this.totalJobs = res.length;
       }, err => {
         console.log('Jobs records error ', err.message);
